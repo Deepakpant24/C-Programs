@@ -12,7 +12,7 @@
   { 
    int temp=returned;
    printf("%d",temp);
-   returned=returned%a[i];
+   returned=returned%array[i];
   }
   return 0;
  }
