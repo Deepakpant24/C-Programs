@@ -7,11 +7,12 @@
  	printf("Enter the received amount : ");
  	scanf("%d",&received);
  	returned=received-bill;
+printf("Returned Rupee=%d\n",returned);
   int array[10]={2000,500,200,100,50,20,10,5,2,1};
   for(int i=0;i<10;i++)
   { 
-   int temp=returned;
-   printf("%d",temp);
+   int temp=returned/array[i];
+   printf("No of %d notes=%d",array[i],temp);
    returned=returned%array[i];
   }
   return 0;
